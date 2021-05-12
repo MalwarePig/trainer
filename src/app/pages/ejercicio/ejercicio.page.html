@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHreff="rutinas"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="true">
+          <ion-card class="ion-text-center">
+            <img src="./../../../assets/img/cuerda.png" alt="cuerda" />
+          </ion-card>
+        </div>
+
+
+        <ion-card>
+          <div class="ion-text-center">
+            <h1 id="TimerCuerda">{{Segundos}} SEGUNDOS</h1>
+          </div>
+
+          <div class="ion-text-center">
+            <h1 id="TimerCuerda">TRABAJANDO</h1>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <!-- Other types -->
+          <ion-progress-bar value="{{Porcentaje}}" buffer="0.65"></ion-progress-bar>
+        </ion-card>
+
+        <ion-card>
+          <div class="ion-text-center">
+            <h1 id="TimerCuerda">{{TotalMinutos}} Minutos</h1>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="warning" id="Reiniciar">Reiniciar</ion-button>
+        <ion-button color="danger" id="Detener">Detener</ion-button>
+        <ion-button color="light" id="Detener">Pausar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
